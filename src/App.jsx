@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div>
-      <h2>리액트로 만드는 가계부</h2>
+      <h2 style={{ color: "white", margin: "10px" }}>리액트로 만드는 가계부</h2>
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
     </div>
