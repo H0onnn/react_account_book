@@ -23,7 +23,7 @@ function ExpenseForm(props) {
 
     const expenseData = {
       title: enteredTitle,
-      amount: enteredAmount,
+      amount: +enteredAmount,
       date: new Date(enteredDate),
     };
 
@@ -50,8 +50,8 @@ function ExpenseForm(props) {
           <label>Amount</label>
           <input
             type="number"
-            min="0.01"
-            step="0.01"
+            min="10"
+            step="10"
             value={enteredAmount}
             onChange={amountChangeHandler}
             required
